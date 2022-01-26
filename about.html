@@ -4,9 +4,61 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About</title>
+		<title>Style</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.container {
+				width: 1200px;
+				margin: 20px auto;
+			}
+			.header {
+				width: 100%;
+				overflow: hidden;
+			}
+			.header .logo {
+				width: 50%;
+				border: 1px solid rosybrown;
+				height: 200px;
+				float: left;
+			}
+			.header .address {
+				width: 50%;
+				border: 1px solid rosybrown;
+				height: 200px;
+				float: right;
+			}
+			.content {
+				width: 100%;
+				overflow: hidden;
+			}
+			.content > .box {
+				width: 33.3333333%;
+				border: 1px solid rosybrown;
+				height: 500px;
+				float: left;
+			}
+			.footer {
+				border: 1px solid red;
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body>
-		<h2>About</h2>
+		<div class="container">
+			<div class="header">
+				<div class="logo">Logo</div>
+				<div class="address">Address</div>
+			</div>
+			<div class="content">
+				<div class="box">box-1</div>
+				<div class="box">box-2</div>
+				<div class="box">box-3</div>
+			</div>
+			<div class="footer">
+				<p>copyright notice</p>
+			</div>
+		</div>
 	</body>
 </html>
